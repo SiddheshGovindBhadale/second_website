@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- styling -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Porfolio</title>
+</head>
+
+<body>
+    <ul class="side_socialLink">
+        <li><a href="#!"><i class='bx bxl-facebook'></i></a></li>
+        <li><a href="#!"><i class='bx bxl-youtube' ></i></a></li>
+        <li><a href="#!"><i class='bx bxl-instagram' ></i></a></li>
+        <li><a href="#!"><i class='bx bxl-github' ></i></a></li>
+    </ul>
+
+    <nav>
+        <div id="menuToggle">
+            <h1>Logo</h1>
+            <div class="myBtn" onclick="toggle()">
+                <span></span>
+            </div>
+        </div>
+        <ul class="list-unstyled" id="menu">
+            <li><a href="#!">Home</a></li>
+            <hr>
+            <li><a href="#!">About</a></li>
+            <hr>
+            <li><a href="#!">Portfolio</a></li>
+            <hr>
+            <li><a href="#!">Contact</a></li>
+            <hr>
+            <li><a href="#!">Blog</a></li>
+        </ul>
+    </nav>
+
+    <section class="home">
+        <div class="text">
+            <p>Hello,</p>
+            <h1>I' M siddhesh</h1>
+            <h3>I am Frontend & Backend <br>WebDevloper</h3>
+            <div class="btns">
+                <button class="hire_btn">Hire me</button>
+                <button class="download_btn">Download CV</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="./img/model.png" alt="model">
+        </div>
+    </section>
+    <section class="about">
+        <div class="main">
+            <div class="img">
+                <img src="./img/about-img.png" alt="...">
+            </div>
+            <div class="text">
+                <h1>About Me</h1>
+                <h3>Full Stack WebDevloper</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, iure, quasi omnis ducimus voluptatum quas cum odio nam rerum aspernatur adipisci necessitatibus modi deleniti laborum dicta ab delectus officia odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt aperiam, eaque id quam veritatis facilis illum nam optio architect.</p>
+                <div class="buttons">
+                    <button><a href="#!">Hire Me</a></button>
+                    <button><a href="#!">Download CV</a></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="text">
+            <h2>Services</h2>
+            <h4>Full Stack Webdevlopment</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi provident dolorem aspernatur natus eos delectus nulla ullam, at iure praesentium odit doloremque sequi, quo id rerum, tempore inventore in.</p>
+        </div>
+        <div class="main">
+            <div class="box box1">
+                <div class="no">
+                    1
+                </div>
+                <h1>Web Design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipie praesentium, at numquam aliquam cum eos voluptatibus vero, ut minus suscipit dicta harum magni fugiat inventore blanditiis!</p>
+                <button>Read More</button>
+            </div>
+            <div class="box box2">
+                <div class="no">
+                    2
+                </div>
+                <h1>Web Devlopment</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipie praesentium, at numquam aliquam cum eos voluptatibus vero, ut minus suscipit dicta harum magni fugiat inventore blanditiis!</p>
+                <button>Read More</button>
+            </div>
+            <div class="box box3">
+                <div class="no">
+                    3
+                </div>
+                <h1>Web Hosting</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipie praesentium, at numquam aliquam cum eos voluptatibus vero, ut minus suscipit dicta harum magni fugiat inventore blanditiis!</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="hire-section">
+        <div class="main">
+            <h2>If You Have Any Project In Your Mind.</h2>
+            <button>Contact Me</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main">
+            <h2>Going-To Internet</h2>
+            <p>Lorem Animi fuga as deserunt labore laudantium deleniti odio molestias commodi earum possimus ex facilis maxime provident.</p>
+            <ul class="social">
+                <li><a href="#!"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#!"><i class='bx bxl-youtube' ></i></a></li>
+                <li><a href="#!"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="#!"><i class='bx bxl-github' ></i></a></li>
+            </ul>
+        </div>
+        <center>
+            <span>Created By <a href="#!">SiddheshBhadale</a> | </span>
+            <span class="far fa-copyright"></span> <span> 2022 All rights reserved</span>
+        </center>
+    </footer>
+
+    <script type="text/javascript">
+
+        let btn = document.querySelector(".myBtn")
+        let menu = document.querySelector(".list-unstyled")
+        let opened = false
+
+        function toggle() {
+            console.log("toggle")
+            if (!opened) {
+                menu.classList.add('open')
+                btn.classList.add('anime')
+                opened = true
+            } else {
+                menu.classList.remove('open')
+                btn.classList.remove('anime')
+                opened = false
+            }
+        }
+
+    </script>
+</body>
+
+</html>
